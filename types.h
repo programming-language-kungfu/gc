@@ -9,6 +9,7 @@ typedef enum {
 } ObjectType;
 
 typedef struct sObject {
+    unsigned char marked;
     ObjectType type;
 
     union {

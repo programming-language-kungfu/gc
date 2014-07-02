@@ -24,6 +24,7 @@ Object* pop (VM* vm) {
 
 Object* new_object (ObjectType type) {
     Object* object = malloc(sizeof(Object));
+    object->marked = 0;
     object->type = type;
     return object;
 }
